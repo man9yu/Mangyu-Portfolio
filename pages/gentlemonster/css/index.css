@@ -1,0 +1,354 @@
+@import url(common.css);
+
+body{
+  color: #333;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a:visited { color:black; }
+
+/* ////////////////////////////////// fullpage div1 */
+
+.navbar{
+  width: 100%;
+  background-color: none;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar > ul {
+  font-size: .85rem;
+  width: 35%;
+  height: 65px;
+  line-height: 65px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
+.logo{
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background: url(../image/Gentle_monster_logo.png)center center no-repeat;
+  background-size: 100%;
+}
+.nav2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.video1{
+  height: 90%;
+}
+/*  */
+.main_logo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 450px;
+  height: 200px;
+  background: url(../image/Gentle_monster_logo_w.png)center center no-repeat;
+  background-size: 100%;
+}
+.main_btn{
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_btn span{
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  line-height: 50px;
+  margin: 7px;
+  color: #000;
+  font-size: .85rem;
+  transition: .5s;
+  cursor: pointer;
+}
+.main_btn span:hover{
+  background-color: #111;
+  color: #fff;
+  transition: .8s;
+  font-weight: 600;
+  transform: translateY(-6px);
+}
+/*  */
+.slidewrap{
+  height: 55%;
+  color: #000;
+  display: flex;
+  margin: 0 3%;
+}
+.slidewrap span{
+  flex: 1;
+  margin: 10px;
+  cursor: pointer;
+  transition: .5s;
+  font-size: .85rem;
+  color: #333;
+  font-weight: 500;
+}
+.s1title{
+  display: flex;
+  margin: 0 3.5%;
+  font-size: 2rem;
+  font-family: 'GmarketSansMedium';
+  font-weight: 900;
+}
+.con1:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transition: .7s;
+}
+.slidewrap span:nth-child(1){
+  background: url(../image/con1.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap span:nth-child(2){
+  background: url(../image/con2.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap span:nth-child(2)::after{
+  content: "와이와이와이 G4";
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+}
+.slidewrap span:nth-child(3){
+  background: url(../image/con3.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap span:nth-child(3)::after{
+  content: "브리";
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+}
+.slidewrap span:nth-child(4){
+  background: url(../image/con4.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap span:nth-child(4)::after{
+  content: "오라 C1";
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+}
+.slidewrap span:nth-child(5){
+  background: url(../image/con5.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap span:nth-child(5)::after{
+  content: "나인 파트 피스";
+  position: absolute;
+  bottom: -6%;
+  left: 0;
+}
+
+/*  */
+.s2wrap{
+  border: 5px solid #fff; overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.s2wrap div{
+  height: 100vh;
+  width: 50%;
+  float: left;
+}
+.s2wrap div:nth-child(1){
+  background: url(../image/Dongtan.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-bottom: 3%;
+}
+.s2wrap div:nth-child(1) span{
+  color: #fff;
+  margin-left: 13px;
+}
+.s2wrap div:nth-child(1) span:nth-child(1){
+  font-size: 2.5rem;
+  font-family: 'GmarketSansMedium';
+}
+.s2wrap div:nth-child(1) span:nth-child(2){
+  font-size: .9rem;
+  float: left;
+}
+.video2{
+
+}
+/*  */
+.s3wrap{
+  height: 55%;
+  margin: 0 3%;
+  display: flex;
+}
+.s3wrap div{margin: 7px;}
+.s3con1{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.s3con1 span:nth-child(1){
+  font-size: 1.8rem;
+  font-family: 'GmarketSansMedium';
+}
+.s3con1 span:nth-child(2){
+  font-size: .81rem;
+  font-family: 'GmarketSansMedium';
+  font-weight: 400;
+}
+.s3con2{
+  flex: 5;
+  overflow: hidden;
+  cursor: pointer;
+}
+.s3con2::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../image/collaboration.jpg)center center no-repeat;
+  background-size: cover;
+  left: 0;
+  transition: .9s;
+}
+.s3con2:hover::before{
+  transform: scale(1.1);
+  transition: .9s;
+}
+.slidewrap2{
+  height: 55%;
+  color: #000;
+  display: flex;
+  margin: 0 3%;
+}
+.slidewrap2 span{
+  flex: 1;
+  margin: 10px;
+  cursor: pointer;
+  transition: .5s;
+  font-size: .85rem;
+  color: #333;
+  font-weight: 500;
+}
+.slidewrap2 span:nth-child(1){
+  background: url(../image/con11.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap2 span:nth-child(2){
+  background: url(../image/con12.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap2 span:nth-child(3){
+  background: url(../image/con13.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap2 span:nth-child(4){
+  background: url(../image/con14.jpg) center center no-repeat;
+  background-size: cover;
+}
+.slidewrap2 span:nth-child(5){
+  background: url(../image/con15.jpg) center center no-repeat;
+  background-size: cover;
+}
+.s5bg{
+  height: 70%;
+  overflow: hidden;
+}
+.s5bg video {
+  width: 100%;
+  z-index: -1;
+}
+.s5btn{
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+}
+.s5btn span{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  transition: .8s;
+  border-right: 1px solid #9d9d9d;
+}
+.s5btn span:hover{
+  background-color: #000;
+  color: #fff;
+  transition: .8s;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transform: translateY(-9px);
+}
+/*  */
+.footer-wrap{
+  height: 10vh;
+  background-color: #111;
+}
+.footer{
+  height: 10vh;
+  color: #fff;
+  font-size: .8rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer span{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.s5bg span{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'GmarketSansMedium';
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.boxfd {
+  opacity: 0;
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}

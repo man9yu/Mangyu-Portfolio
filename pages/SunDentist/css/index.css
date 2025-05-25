@@ -1,0 +1,817 @@
+@import url(common.css);
+
+body::-webkit-scrollbar {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #111 !important;
+}
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100%;
+  font-weight: 400;
+  color: #2d2d2d;
+  font-size: 15px;
+}
+h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+  text-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2{
+  font-size: 1.2rem;
+  line-height: 28px;
+  font-family: "fontYouandiModernTR";
+}
+/*  */
+.top{
+  height: 90px;
+  width: 100%;
+  margin: auto;
+  padding: 0 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  background-color: #111;
+}
+.logo{
+  background: url(../image/logo_w.png)center center no-repeat;
+  background-size: 85%;
+  width: 500px;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.top ul li{
+  float: left;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.top_nav{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 3px rgba(0, 0, 0, 0.7);
+}
+.top_nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top_nav ul li{
+  padding-left: 70px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top_hov{
+  z-index: 10000;
+  position: absolute;
+  width: 70%;
+  height: 300px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/*  */
+
+.navbar {
+  background-color: #111;
+  transition: .4s;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+.sub_logo a{
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  left: 5%;
+  background: url(../image/logo_w2.png) center center no-repeat;
+  background-size: 90%;
+}
+.navbar > ul {
+  font-size: 1.1rem;
+  width: 50%;
+  height: 65px;
+  line-height: 65px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  transition: 1s;
+}
+
+.dropdown li {
+  position: relative; /* 하위 목록을 위한 위치 지정 */z-index: 100002;
+  width: 150px;
+  height: 50px;
+  line-height: 40px;
+  font-size: .8rem;
+  background-color: rgb(45, 45, 61,.9);
+}
+.dropdown li a{margin: 15px;}
+.has-dropdown .dropdown {
+  opacity: 0;
+  position: absolute;
+  z-index: 10000;
+  transition: .5s;
+}
+.has-dropdown:hover .dropdown {
+  transition: .3s;
+  opacity: 1;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .8s;
+}
+
+/*  */
+
+/*  */
+.main_video{
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+
+}
+video {width: 100%; position: absolute ;left: 50%;top: 50%;transform: translate(-50%,-50%);}
+/*  */
+
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.main_img1{
+  background: url(../image/mainimg/main1.png) center center no-repeat;
+  background-size: 40%;
+}
+.main_img2{
+  background: url(../image/mainimg/main2.png) center center no-repeat;
+  background-size: 50%;
+}
+.main_img3{
+  background: url(../image/mainimg/main3.png) center center no-repeat;
+  background-size: 50%;
+}
+.swiper_logo{
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url(../image/logo.jpg)center center no-repeat;
+  background-size: 85%;
+}
+.swiper-button-next {
+  color: rgba(200, 107, 168,1) !important;
+}
+.swiper-button-prev {
+  color: rgba(200, 107, 168,1) !important;
+}
+/* con1 */
+#con1_title, #con2_subtitle{
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+
+}
+.con1_titlewarp, .con2_titlewarp{
+  width: 90%;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+}
+#con1_title span, .con2_titlewarp span{flex: 1;}
+#con1_title span:nth-child(1),.con2_titlewarp span:nth-child(1){
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+  text-shadow: 8px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#con1_title span:nth-child(2),.con2_titlewarp span:nth-child(2){
+  font-size: 1.2rem;
+  line-height: 28px;
+  font-family: "fontYouandiModernTR";
+}
+#con1_title span:nth-child(3){position: relative;cursor: pointer;}
+#con1_title span:nth-child(3) a{
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+#con1_title span:nth-child(3) a::before{
+  content: "";
+  border-bottom: 4px solid #000;
+  width: 60%;
+  position: absolute;
+  bottom: 20%;
+  transition: .5s;
+}
+#con1_title span:nth-child(3) a:hover{
+  color: #fff;
+  z-index: 100;
+  transition: .8s;
+}
+#con1_title span:nth-child(3) a:hover:before{
+  border-bottom: 35px solid #000;
+  z-index: -1;
+  transition: .8s;
+}
+#con1{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  padding: 0 100px;
+  cursor: grab;
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.con1_img1{
+  background: url(../image/pic_differ01.jpg)center center no-repeat;
+  background-size: cover;
+}
+.con1_img2{
+  background: url(../image/pic_differ02.jpg)center center no-repeat;
+  background-size: cover;
+}
+.con1_img3{
+  background: url(../image/pic_differ03.jpg)center center no-repeat;
+  background-size: cover;
+}
+#con1 > div > span{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px) grayscale(100%) brightness(50%);
+  color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+#con1 > div > span > b{
+  height: 42%;
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: 'GmarketSansMedium';
+  padding-bottom: 10px;
+}
+#con1 > div > span > a{
+  height: 58%;
+}
+
+/*  */
+
+#con2_title{
+  height: 250px;
+  margin-top: 150px;
+
+}
+#con2_title:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background: url(../image/logo_gray.jpg)top center no-repeat;
+  background-size: contain;
+  z-index: -1;
+  opacity: .22;
+}
+#con2_title h1{padding-top: 100px;}
+#con2_title h1, h2{
+  text-align: center;
+}
+#con2{
+  height: 600px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+#con2 span{
+  width: 320px;
+  height: 450px;
+  margin-left: 15px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+  overflow: hidden;
+  transition: .6s;
+  position: relative;
+  cursor: pointer;
+}
+#con2 span:hover{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  transition: .7s;
+  transform: translateY(-14px);
+}
+
+#con2 span:hover::before{
+  filter: blur(3px);
+  transition: 1s;
+  transform: scale(1.2);
+}
+#con2 span:nth-child(1)::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  background: url(../image/clinic_img2.jpg)center center no-repeat;
+  background-size: cover;
+}
+#con2 span:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  background: url(../image/clinic_img3.jpg)center center no-repeat;
+  background-size: cover;
+}
+#con2 span:nth-child(3)::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  background: url(../image/clinic_img4.jpg)center center no-repeat;
+  background-size: cover;
+}
+#con2 span:nth-child(4)::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  background: url(../image/clinic_img1.jpg)center center no-repeat;
+  background-size: cover;
+}
+#con2 span::after{
+  content: "";
+  font-size: 1.7rem;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  color: #fff;
+  text-align: center;
+  top: 0;
+  padding-top: 38px;
+  transition: .7s;
+}
+#con2 span:nth-child(1)::after{
+  content: "바이오 급속교정";
+}
+#con2 span:nth-child(2)::after{
+  content: "수면임플란트";
+}
+#con2 span:nth-child(3)::after{
+  content: "피부클리닉";
+}
+#con2 span:nth-child(4)::after{
+  content: "성장기 치아교정";
+}
+#con2 span:hover::after{
+  font-size: 2.3rem;
+  transition: .7s;
+  transform: translateY(80px);
+}
+/*  */
+#con2_subtitle{margin-top: 200px;}
+#con2_sub{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  padding: 0 100px;
+}
+#con2_sub > div{
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+#con2_sub > div div:nth-child(1){
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.con2_btn span{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  transition: .4s;
+}
+.con2_btn span:last-child{
+  background-color: #fff;
+  color: #111;
+  border-bottom: 4px solid #000;
+  position: relative;
+}
+.con2_btn span:last-child::before{
+  content: "";
+  border-bottom: 6px solid #111;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  transition: .5s;
+}
+.con2_btn span:last-child:hover{
+  box-shadow: none;
+  color: #fff;
+  z-index: 100;
+  transition: .8s;
+}
+.con2_btn span:last-child:hover:before{
+  border-bottom: 110px solid #111;
+  z-index: -1;
+  transition: .8s
+}
+
+.con2_btn span:hover{
+  background-color: #fff;
+  color: #000;
+  transition: .8s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+#con2_sub > div div:nth-child(2){
+  flex: 4;
+}
+.con2_conbox > div{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.con2_conbox > div > span{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin-left: 20px;
+  filter: grayscale(100%);
+  display: none;
+}
+.con2_conbox > div > span:nth-child(1){
+  background: url(../image/conimg/con1.png);
+  background-size: cover;
+  display: block;
+}
+.con2_conbox > div > span:nth-child(2){
+  background: url(../image/conimg/con2.png);
+  background-size: cover;
+}
+.con2_conbox > div > span:nth-child(3){
+  background: url(../image/conimg/con3.png);
+  background-size: cover;
+}
+.con2_conbox > div > span:nth-child(4){
+  background: url(../image/conimg/con4.png);
+  background-size: cover;
+}
+/*  */
+#con3_title{
+  height: 170px;
+  margin-top: 250px;
+  font-size: 1rem;
+}
+#con3_title > h1{
+  text-align: center;font-size: 2.5rem;
+  font-family: 'GmarketSansMedium';
+}
+#con3_title > h1:nth-child(2){
+  font-weight: bold;
+}
+#con3{
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+}
+.con3_wrap{
+  margin: auto;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+#con3::before{
+  content: "";
+  background: url(../image/bg.jpg)center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  opacity: .15;
+  box-shadow: 0px 5px 10px #fff inset;
+}
+#con3 span{
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: .8s;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+#con3 span:nth-child(1){
+  background: url(../image/doctor/doctor_img1.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(2){
+  background: url(../image/doctor/doctor_img2.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(3){
+  background: url(../image/doctor/doctor_img13.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(4){
+  background: url(../image/doctor/doctor_img14.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(5){
+  background: url(../image/doctor/doctor_img5.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(6){
+  background: url(../image/doctor/doctor_img16.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(7){
+  background: url(../image/doctor/doctor_img7.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(8){
+  background: url(../image/doctor/doctor_img8.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(9){
+  background: url(../image/doctor/doctor_img9.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(10){
+  background: url(../image/doctor/doctor_img10.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(11){
+  background: url(../image/doctor/doctor_img16.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(12){
+  background: url(../image/doctor/류지인.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:nth-child(13){
+  background: url(../image/doctor/이최량.png) center center no-repeat;
+  background-size: cover;
+}
+#con3 span:hover{
+  transition: .7;
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: none;
+}
+#con3 a{
+  position: absolute;
+  width: 300px;
+  height: 70px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+#con3 a::before{
+  content: "";
+  border-bottom: 4px solid #000;
+  width: 60%;
+  position: absolute;
+  bottom: 20%;
+  transition: .5s;
+}
+#con3 a:hover{
+  color: #fff;
+  z-index: 100;
+  transition: .8s;
+}
+#con3 a:hover:before{
+  border-bottom: 40px solid #000;
+  z-index: -1;
+  transition: .8s;
+}
+
+/*  */
+#map{
+  width: 100%;
+  height: 500px;
+}
+
+/*  */
+
+#footer_sub{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #111;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.14);
+}
+#footer_sub span{
+  width: 440px;
+  height: 180px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 180px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'GmarketSansMedium';
+  cursor: pointer;
+  transition: .7s;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+}
+#footer_sub span:nth-child(1){
+  background: url(../image/메인3_pc.jpg)center center no-repeat;
+  background-size: cover;
+
+}
+#footer_sub span:nth-child(1):hover{
+  background: url(../image/banner_1_on.jpg)center center no-repeat;
+  background-size: cover;
+  transition: .3s;
+}
+#footer_sub span:nth-child(2){
+  background: url(../image/banner_3.jpg)center center no-repeat;
+  background-size: cover;
+}
+#footer_sub span:nth-child(2):hover{
+  background: url(../image//banner_3_on.jpg) center no-repeat;
+  background-size: cover;
+  transition: .3s;
+}
+#footer_sub span:nth-child(3){
+  background: url(../image/mou.jpg)center center no-repeat;
+  background-size: cover;
+}
+#footer_sub span:nth-child(3):hover{
+  background: url(../image/mou_on.jpg)center center no-repeat;
+  background-size: cover;
+  transition: .3s;
+}
+
+
+
+footer{
+  width: 100%;
+  height: 430px;
+}
+.ft1, .ft3{
+  height: 90px;
+}
+.ft1{
+  background-color: #111;
+}
+.ft1 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+}
+.ft1 div span{
+  flex: 1;
+  line-height: 90px;
+  text-align: center;
+}
+.ft2_bg{
+  width: 100%;
+  height: 500px;
+  background-color: rgba(243 243 243);
+}
+.ft2{
+  width: 80%;
+  margin: auto;
+  height: 200px;
+  display: flex;
+}
+.ft2 span{
+  flex: 1;
+  text-align: center;
+  font-size: .9rem;
+}
+.ft2 span ul{margin-top: 70px; }
+.ft2 span ul li{cursor: pointer;}
+.ft2 span ul li:first-child{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.ft2 > span:last-child{
+  flex: 2;
+}
+.ft2_con{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 160px;
+}
+.ft2_con > span{
+  display: flex;
+  width: 220px;
+  margin: 10px auto;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.ft3{width: 1100px; margin: auto;line-height: 60px;height: 60px;font-size: .9rem;}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.boxfd {
+  opacity: 0;
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}

@@ -1,0 +1,309 @@
+body { font-family: "noto_sans",sans-serif; -ms-overflow-style: none; position: relative; height: auto; width: 100vw; } 
+li { list-style: none; } 
+div > img { width: 100%; height: 100%; object-fit: cover; } 
+/* body::-webkit-scrollbar { display: none; } */
+.wrap .inner { border: 1px solid red; } 
+
+/* 헤더 */
+header { background: #fff; 
+ font-family: "nothing_sans",sans-serif; border-bottom: 1px solid #ddd; position: fixed; height: 82px; width: 100%; z-index: 2002; display: flex; justify-content: space-between; align-items: center; padding: 0 10px; transition: 500ms; top: 0; } 
+header > div { width: 100%; height: 100%; display: flex; } 
+header a img { width: 100%; width: 122px; height: 44px; } 
+header nav { width: 100%; } 
+header nav ul { display: flex; height: 100%; } 
+header nav ul li { height: 100%; transition: .5s; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #333; } 
+header nav ul li:hover { color: #000; transition: .5s; } 
+.header_inner { width: 100%; padding: 0 40px; } 
+.header_inner > a { display: flex; align-items: center; justify-content: center; } 
+.nav { 
+ position: relative; 
+ z-index: 20; 
+}
+ 
+ .main-menu { 
+ display: flex; 
+ justify-content: center; 
+ list-style: none; 
+ padding: 0; 
+ margin: 0; 
+ gap: 20px; 
+ transition: gap 0.5s ease-in-out; 
+}
+ 
+ .menu-item a { 
+ display: block; 
+ padding: 1rem 1.5rem; 
+ text-decoration: none; 
+ color: #333; 
+}
+ .nav:hover .main-menu { 
+ gap: 40px; 
+}
+
+ .submenu-container { 
+ position: absolute; 
+ top: 100%; 
+ left: 0; 
+ width: 100%; 
+ background: #fff; 
+ overflow: hidden; 
+ max-height: 0; 
+ opacity: 0; 
+ transition: all 0.3s ease; 
+ z-index: 10; 
+ border-bottom: 1px solid #ddd; 
+}
+ 
+ .submenu-container.active { 
+ max-height: 500px; /* 충분히 큰 값 */
+ opacity: 1; 
+ padding: 2rem 3rem; 
+ display: flex; 
+ justify-content: center; 
+}
+ 
+ .submenu { 
+ display: none; 
+ gap: 2.2rem; 
+ max-width: 1200px; 
+ width: 100%; 
+ justify-content: flex-start; /* 왼쪽 정렬 */
+}
+ 
+ .submenu.active { 
+ display: flex; 
+ gap: 3rem; 
+}
+ 
+ .subgroup { 
+ min-width: 200px; 
+}
+ 
+ .subtitle { 
+ font-weight: bold; 
+ margin-bottom: 0.5rem; 
+}
+ 
+ .subgroup ul { 
+ list-style: none; 
+ padding: 0; 
+ margin: 0; 
+}
+ 
+ .subgroup li { 
+ margin-bottom: 0.5rem; 
+}
+
+ .header-right { 
+ display: flex; 
+ align-items: center; 
+ gap: 1rem; 
+ margin-left: auto; 
+}
+
+.lang-toggle { 
+ display: flex; 
+ align-items: center; 
+ gap: 0.25rem; 
+ font-size: 14px; 
+}
+
+.lang-toggle button { 
+ background: none; 
+ border: none; 
+ cursor: pointer; 
+ color: #888; 
+}
+
+.lang-toggle button.active { 
+ font-weight: bold; 
+ color: #000; 
+}
+
+.search-btn { 
+ background: none; 
+ border: none; 
+ font-size: 18px; 
+ cursor: pointer; 
+}
+
+.contact-btn { 
+ min-width: 110px; 
+ color: #23398c; 
+ padding: .7rem 1rem; 
+ font-weight: bold; 
+ cursor: pointer; 
+ border-radius: 50px; 
+ border: 1px solid #23398c; 
+ transition: .5s; 
+}
+.contact-btn:hover { 
+ color: #fff; 
+ background-color: #23398c; 
+ transform: .8s; 
+}
+/* */
+
+.section_inner { 
+ border: 1px solid #999; 
+ max-width: 1360px; 
+ height: 100%; 
+ margin: 0 auto; 
+}
+/* 섹션 1 */
+.main_spline { 
+ position: absolute; 
+ left: 0; 
+ top: 0; 
+ width: 100%; 
+ height: 100%; 
+}
+.section1 { 
+ border: 3px solid blue; 
+ width: 100%; 
+ height: 1800px; 
+ position: relative; 
+ overflow: visible; 
+}
+.section_inner.index { z-index: 10; display: flex; } 
+
+.section_inner.index .con_left { 
+ width: 50%; 
+ height: 100vh; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+}
+
+.line { 
+ opacity: 0; 
+ transform: translateY(20px); 
+ transition: all 0.6s ease; 
+ color: #fff; 
+ font-size: 30px; 
+ line-height: 32px; 
+ font-weight: 300; 
+}
+.swiper-wrapper { 
+ padding: 20px; 
+}
+.swiper-slide .line:nth-child(1) { 
+ font-size: 42px; 
+ font-weight: bold; 
+ margin-bottom: 20px; 
+}
+
+.swiper-slide-active .line { 
+ opacity: 1; 
+ transform: translateY(0); 
+}
+
+/* 순차 애니메이션용 딜레이 */
+.swiper-slide-active .line:nth-child(1) { 
+ transition-delay: 0.1s; 
+}
+.swiper-slide-active .line:nth-child(2) { 
+ transition-delay: 0.3s; 
+}
+.swiper-slide-active .line:nth-child(3) { 
+ transition-delay: 0.5s; 
+}
+
+.section1 .con_right_wrap { 
+ border: 3px solid red; 
+ width: 100%; 
+ max-width: 1360px; 
+ position: absolute; 
+ top: 0; 
+ left: 50%; 
+ transform: translate(-50%,0); 
+ margin: 0 auto; 
+ height: 1800px; 
+ pointer-events: none; 
+}
+.con_right_wrap ul { 
+ height: 100%; 
+ display: flex; 
+ flex-direction: column; 
+ align-items: flex-end; 
+ justify-content: center; 
+ gap: 30px; 
+}
+.con_right_wrap .con_right li { 
+ width: 430px; 
+ height: 456px; 
+ background-color: #fff; 
+ /* border-radius: 8px; */
+ padding: 20px 30px 30px; 
+ pointer-events: auto; 
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+}
+.con_right_wrap .con-title p { 
+ font-weight: bold; 
+ font-size: 20px; 
+ color: #23398c; 
+}
+
+* {
+  border: none !important;
+}
+
+.main_bg { 
+ background: url(../img/bg_main.jpg) center center no-repeat; 
+ background-size: cover; 
+ animation: grayscaleBreath 7.5s ease-in-out infinite; 
+ width: 100%; 
+ height: 100vh; 
+ position: absolute; 
+ left: 0; 
+ z-index: -1; 
+}
+@keyframes grayscaleBreath { 
+ 0% { 
+ filter: grayscale(40%); 
+}
+ 50% { 
+ filter: grayscale(80%); 
+}
+ 100% { 
+ filter: grayscale(40%); 
+}
+}
+.main_gsap_wrap { 
+ border: 4px solid; 
+ position: sticky; 
+ top: 0; 
+ height: 100vh; 
+ width: 100vw; 
+}
+
+.section2 { 
+ border: 1px solid black; 
+ width: 100%; 
+ height: 860px; 
+}
+
+
+/* 한만규 소개 */
+.footer_mangyu_about { 
+ display: flex; 
+ align-items: center; 
+ justify-content: center; 
+ height: 100vh; 
+}
+
+spline-viewer { 
+ height: 100vh; 
+}
+
+.article { 
+ position: absolute; 
+ padding: 3% 5%; 
+ border-radius: 15px; 
+ z-index: 5; 
+ background-color: rgba(227, 227, 227, 0.59); 
+ backdrop-filter: blur(5px) saturate(300%); 
+ box-shadow: 0px 7px 15px rgba(0,0,0,0.25); 
+ pointer-events: none; 
+}
+.article ul { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; } 
