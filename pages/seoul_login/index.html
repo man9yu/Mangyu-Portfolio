@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SEOUL</title>
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+	overflow-x:hidden;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	display: flex;
+}
+
+.nav>div {
+	flex: 1;
+}
+
+.nav>div:nth-child(2) {
+	flex: 3;
+}
+
+.nav_ul {
+	display: flex;
+}
+
+.nav_ul>li {
+	flex: 1;
+	line-height: 15px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.nav_oth>li {
+	float: left;
+	padding-right: 10px;
+	line-height: 15px;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.search {
+	width: 100%;
+	height: 100px;
+	background: #0d81e8;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.search>div {
+	height: 100px;
+	background: url("../seoul_login/logo_btn.png") center center no-repeat;
+	background-size: contain;
+	width: 300px;
+	margin-left: 15%;
+}
+
+#search_box {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 450px;
+	height: 45px;
+	color: #0d81e8;
+}
+
+.text {
+	width: 40%;
+	height: 100px;
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+}
+
+form {
+	width: 28%;
+	flex-direction: column;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form>input {
+	border: 1px solid #000;
+	width: 100%;
+	height: 50px;
+	margin: 10px 0;
+	font-weight: 800;
+}
+
+#submit_box {
+	width: 101%;
+	border: none;
+	background: #0d81e8;
+	color: #fff;
+	font-size: 1.2em;
+	transition: 1s;
+}
+
+#submit_box:hover {
+	background: #000;
+	transition: 1s;
+}
+
+.notice {
+	border: 1px solid #d5d5d5;
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: .8em;
+}
+
+.notice>b {
+	color: red;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 130px;
+	width: 100%;
+	background-color: #ddd;
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+footer ul{
+	list-style: none;
+	display: flex;
+	font-size: .8rem;
+	width: 80%;
+	margin: 20px auto;
+}
+footer ul li{
+	margin-left: 20px;
+	cursor: pointer;
+}
+footer div{
+	padding-left: 40px;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	font-size: .8rem;
+}
+</style>
+
+
+</head>
+<body>
+
+	<div class="nav">
+		<div></div>
+		<div>
+			<ul style="list-style-type: none;" class="nav_ul">
+				<li></li>
+				<li>서울소식</li>
+				<li>시민참여</li>
+				<li>분야별정보</li>
+				<li>서울소개</li>
+				<li>부서안내</li>
+				<li>정보공개</li>
+				<li>응답소</li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="">
+			<ul style="list-style-type: none;" class="nav_oth">
+				<li>로그인</li>
+				<li>나의서울</li>
+				<li>전자우편</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="search">
+		<div></div>
+		<input type="search" placeholder="  검색어를 입력해 주세요" id="search_box">
+	</div>
+
+	<h1 class="text">서울시 통합회원 로그인</h1>
+	<h3 class="text">
+		서울특별시 누리집을 방문해주셔서 감사합니다.<br>로그인하시면 보다 편리하게 서비스 이용이 가능합니다.
+	</h3>
+
+	<form method="get">
+
+		<span class="notice"><b>타인 아이디</b> 사용 등 약관 위반 행위 시 <b>서비스
+				이용이</b> 중지됩니다.</span> <input type="text"
+			placeholder="&nbsp; &nbsp; 아이디(5~15자의 영문, 숫자만 가능)"> <input
+			type="password" placeholder="&nbsp; &nbsp; 비밀 번호"> <input
+			type="submit" value="로그인" id="submit_box">
+
+	</form>
+
+	<footer>
+		<ul>
+			<li>누리집 도우미</li>
+			<li><b>개인정보처리방침</b></li>
+			<li>저작권 정책</li>
+			<li>영상정보처리기기 운영 관리방침</li>
+			<li>누리집 바로잡기</li>
+			<li>누리집지도</li>
+		</ul>
+		<hr style="width: 80%;">
+		<div>
+			<span>서울특별시청 04524 서울특별시 중구 세종대로 110 [찾아오시는 길]
+				</span>
+			<span>대표전화: 02-120 또는 02-731-2120  로그인 문의 : 02-2126-4519 / 02-2133-6517</span>
+			<span>© Seoul Metropolitan Government all rights reserved</span>
+		</div>
+</html>
